@@ -26,7 +26,6 @@ public class FileController {
      * 上传文件
      *
      * @param file
-     * @return
      */
     @PostMapping(Urls.URL_UPLOAD_FILE)
     public ResponseEntity<?> uploadFile(@RequestParam("file") MultipartFile file) {
@@ -39,8 +38,6 @@ public class FileController {
 
     /**
      * 下载文件
-     *
-     * @return
      */
     @GetMapping(Urls.URL_DOWNLOAD_FILE)
     public ResponseEntity<?> uploadFile(@RequestParam String id, HttpServletResponse response) {
@@ -54,9 +51,7 @@ public class FileController {
 
     /**
      * 浏览器下载文件
-     *
-     * @return
-     */
+     **/
     @GetMapping(Urls.URL_DOWNLOAD_FILE_BY_WEB)
     public String downloadFileByWeb() {
 

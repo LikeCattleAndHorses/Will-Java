@@ -15,7 +15,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @MapperScan("mambazzh.com.designer.dao")
 public class MambaApplication{
-    private static Logger logger = LoggerFactory.getLogger(MambaApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(MambaApplication.class);
     public static void main(String[] args) {
         SpringApplication.run(MambaApplication.class, args);
         logger.info("SpringBoot启动成功！");
